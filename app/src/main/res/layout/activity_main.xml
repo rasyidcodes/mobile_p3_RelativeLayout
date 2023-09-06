@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:layout_above="@id/rl_main">
+
+        <EditText
+            android:id="@+id/tv_res"
+            android:paddingRight="@dimen/_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="80dp"
+            android:editable="false"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textHasil"
+            android:layout_below="@id/tv_res"
+            android:paddingRight="@dimen/_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rl_main"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_sec1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_C"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="C"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:background="@drawable/rounded_bt_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_koma"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text=","
+                    android:textSize="@dimen/_txtBtSz"
+                    android:background="@drawable/rounded_bt_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_del"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="del"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:background="@drawable/rounded_bt_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_bagi"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="/"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_orange"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sec2"
+            android:layout_marginTop="@dimen/_mt"
+            android:layout_below="@id/ll_sec1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_7"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="7"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_8"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="8"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_9"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="9"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_kali"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="X"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_orange"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sec3"
+            android:layout_below="@id/ll_sec2"
+            android:layout_marginTop="@dimen/_mt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_4"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="4"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_5"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="5"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_6"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="6"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_minus"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="-"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_orange"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sec4"
+            android:layout_below="@id/ll_sec3"
+            android:layout_marginTop="@dimen/_mt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_1"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="1"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_2"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="2"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_3"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="3"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_plus"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="+"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_orange"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sec5"
+            android:layout_below="@id/ll_sec4"
+            android:layout_marginTop="@dimen/_mt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/_16dp"
+            android:weightSum="4"
+            >
+
+            <RelativeLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_0"
+                    android:layout_width="@dimen/_buttonSizeMain"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_dark_gray"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_samadengan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_buttonSizeMain"
+                    android:layout_centerHorizontal="true"
+                    android:text="="
+                    android:textSize="@dimen/_txtBtSz"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_bt_orange"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
